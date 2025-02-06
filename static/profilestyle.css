@@ -1,0 +1,95 @@
+@font-face{
+    font-family: "Futura PT";
+    src: url(FuturaPTMedium.otf)
+}
+
+*{
+    font-family: "Futura PT"
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color:white;
+}
+
+.header{
+    background-color:#4CAF50;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.home-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.profile-picture img {
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+.username, .joined-date{
+    font-size: 14px;
+    color: gray;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+.friend-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.friend {
+    background-color: #4CAF50;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.content {
+    width: 75%;
+    padding: 20px;
+}
+
+.blog-post {
+    background-color: #f4f4f4;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.date {
+    text-align: right;
+    font-size: 12px;
+    color: gra
+}
