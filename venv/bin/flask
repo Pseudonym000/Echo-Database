@@ -1,4 +1,4 @@
-#!/home/kyle/Echo-Database/venv/bin/python3
+#!/home/kyle/echo/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
