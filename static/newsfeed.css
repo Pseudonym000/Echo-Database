@@ -1,10 +1,5 @@
-@font-face{
-    font-family: "Futura PT";
-    src: url(FuturaPTMedium.otf)
-}
-
 *{
-    font-family: "Futura PT"
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -18,7 +13,7 @@ body {
 
 .header {
     background-color: #4CAF50;
-    padding: 15px;
+    padding: 1.6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,8 +21,12 @@ body {
     font-weight: bold;
 }
 
-.profile-icon {
-    font-size: 24px;
+h1 {
+    margin: 0px;
+}
+
+.profile-icon img{
+    width: 2rem;
     cursor: pointer;
 }
 

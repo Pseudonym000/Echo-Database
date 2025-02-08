@@ -13,7 +13,7 @@ body {
     padding: 0;
     margin: 0;
     font-weight: 500;
-    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.2)), url(SignupStockPhoto2.jpg);
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.2)), url(/static/images/sign-up-purple-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; /* Optional: for a parallax effect */

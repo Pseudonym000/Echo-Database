@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Front Page</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='blogpoststyle.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='newsfeed.css') }}">
 </head>
 <body>
-    <div class="header">
-        <h1>ECHO</h1>
 
-        <div class="profile-icon">&#128100;</div>
+    <div class="header">
+        <h1>ECHO</h1>   
+
+        <div class="profile-icon">
+            <a href="{{ url_for('profile') }}">
+                <img src="{{ url_for('static', filename='images/profile.svg') }}" alt="profile">
+            </a>
+        </div>
     </div>
+
     <div class="container">
-        <div class="blog-card"><a href = "login.html" class = "no-underline">
+        <div class="blog-card"><a href="{{ url_for('post') }}" class = "no-underline">
             <div class="blog-image">
-                <img src="{{ url_for('static', filename='/images/sign-up-img.jpg') }}" alt="Blog Thumbnail">
+                <img src="{{ url_for('static', filename='/images/sign-up-green-img.jpg') }}" alt="Blog Thumbnail">
             </div>
             <div class="blog-content">
                 <h2>NEW BLOG</h2>

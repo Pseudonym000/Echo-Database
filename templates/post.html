@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='post.css') }}">
+</head>
+<body>
+    
+    <div class="header">
+        <h1>ECHO</h1>
+        <div class="profile-icon">
+            <a href="{{ url_for('index') }}" id="home-icon">
+                <img src="{{ url_for('static', filename='/images/home.svg') }}" alt="home">
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <p class="author">@Username • February 2, 2025</p>
+        <div class="blog-image">
+            <img src="{{ url_for('static', filename='images/thumbnail.png') }}" alt="Blog Thumbnail">
+        </div>
+        <h2>Exploring the Wild West: A Journey Through Red Dead Redemption 2</h2>
+        <div class="line"></div>
+        <p class="blog-content">
+            One of the most striking aspects of Red Dead Redemption 2 is its world. From the snow-covered mountains of the Grizzlies to the sun-soaked plains of the Heartlands, the game offers a staggering level of detail. The environment isn’t just a backdrop for action; it feels like a living, breathing ecosystem. Animals roam freely, weather changes dynamically, and NPCs (non-playable characters) go about their daily lives, adding depth to the experience.
+            Players can get lost in the world, whether they’re hunting in the wild, fishing by the river, or simply riding across the vast open plains. Every corner of the world seems crafted with care, giving a sense of realism that’s rare in video games.
+            </p>
+            <p>Red Dead Redemption 2 is often lauded for its story, and for good reason. The narrative is rich, emotional, and thought-provoking. The game follows Arthur Morgan, a member of the Van der Linde gang, led by the charismatic Dutch. The gang's way of life is threatened as the world changes, and Arthur must navigate his loyalties to Dutch, his comrades, and his own moral compass.
+            The game's story is told through a mix of main missions, side quests, and character interactions. Every decision, even the smallest ones, can have an impact, making each player's experience unique. The relationships Arthur forms with other members of the gang are especially poignant, and as the story unfolds, players witness the rise and fall of the gang, all while questioning what it means to live with honor in a lawless land.
+            </p>
+            <p>What truly sets Red Dead Redemption 2 apart is its commitment to realism. From the way Arthur physically moves through the world to the meticulous care put into the small details—like how the character’s beard grows over time or how different animals react to changes in the weather—RDR2 invites players to fully immerse themselves in a world that feels lived-in.
+            The game doesn’t rush you; it lets you take your time, explore, and appreciate the finer details. Whether you’re grooming your horse, tending to a campfire, or simply chatting with a fellow outlaw, the game allows you to live and breathe in the Wild West like never before.
+        </p>
+        <div class="comments-section">
+            <h3>Comments:</h3>
+            <textarea placeholder="Add a comment..."></textarea>
+            <div class="comment">
+                <p><strong>Arthur Morgan</strong></p>
+                <p>Nothin' means more to me than this gang. I would kill for it. I would happily die for it. I wish things were different... But it weren't us who changed.</p>
+                <p class="comment-date">March 3</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

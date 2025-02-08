@@ -4,17 +4,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Profile</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='profilestylee.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='profilestyle.css') }}">
     </head>
     <body>
+
         <div class="header">
             <h1>ECHO</h1>
-            <div class="home-icon">&#8962;</div>
+            <div class="home-icon">
+                <a href="{{ url_for('index') }}">
+                    <img src="{{ url_for('static', filename='/images/home.svg') }}" alt="home">
+                </a>
+            </div>
         </div>
+
         <div class = "container">
             <div class = "sidebar">
                 <div class="profile-picture">
-                    <img src="{{ url_for('static', filename='/images/images.jpg') }}" alt = "Profile Picture">
+                    <img src="{{ url_for('static', filename='/images/good.jpg') }}" alt = "Profile Picture">
                 </div>
                 <h2>name here</h2>
                 <p class ="username">@placeholderusername</p>

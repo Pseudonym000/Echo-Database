@@ -1,0 +1,125 @@
+@font-face{
+    font-family: "Futura PT";
+    src: url(FuturaPTMedium.otf)
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.header {
+    background-color: #4CAF50;
+    padding: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.profile-icon img {
+    width: 2rem;
+    cursor: pointer;
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto 20px auto;
+    padding: 20px;
+    border: 1px solid white; 
+    border-radius: 10px; 
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.678);
+}
+
+h1 {
+    margin: 0px;
+}
+
+h2 {
+    color: #4CAF50;   
+}
+
+.line {
+    position: relative;
+    left: -20px; 
+    width: calc(100% + 40px); 
+    height: 1px; 
+    background-color: white; 
+    margin: 20px 0; 
+}
+
+
+.author {
+    font-size: 14px;
+    font-weight: 600;
+    color:#4CAF50;
+}
+
+p{
+    text-align: justify;
+}
+
+.blog-content {
+    margin: 10px 0;
+    text-align: justify;
+
+}
+
+.blog-image {
+    width: 100%; 
+    height: auto; 
+    max-width: 1570px; 
+    overflow: hidden;
+    
+}
+
+.blog-image img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover; 
+    border-radius: 30px; 
+}
+
+.comments-section {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 99%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+    background: #333;
+    color: white;
+}
+
+.comment {
+    background-color: #3a3a3a;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.comment-date {
+    font-size: 12px;
+    color: gray;
+    text-align: right;
+}
+
+#home-icon {
+    text-decoration: none;
+    color: #1c1c1c;
+}

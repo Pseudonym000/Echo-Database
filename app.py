@@ -1,10 +1,10 @@
 from flask import Flask, render_template
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="static")
 
 @app.route('/')
-def blogpage():
-    return render_template('blogpage.html')
+def index():
+    return render_template('newsfeed.html')
 
 @app.route('/login')
 def login():
@@ -16,11 +16,11 @@ def signup():
 
 @app.route('/profile')
 def profile():
-    return render_template('Profile.html')
+    return render_template('profile.html')
 
-@app.route('/blogpost')
-def blogpost():
-    return render_template('blogpost.html')
+@app.route('/page')
+def post():
+    return render_template('post.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
