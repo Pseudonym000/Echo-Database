@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Front Page</title>
-    <link rel="stylesheet" href="C:\Users\Neil Vhanjo\OneDrive\Pictures\NU Documents\2nd Year Of Computer Science\2nd Semester\Database Systems\Activity\Database Final\static\blogpoststyle.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='blogpoststyle.css') }}">
 </head>
 <body>
     <div class="header">
@@ -15,7 +15,7 @@
     <div class="container">
         <div class="blog-card"><a href = "login.html" class = "no-underline">
             <div class="blog-image">
-                <img src="C:\Users\Neil Vhanjo\OneDrive\Pictures\NU Documents\2nd Year Of Computer Science\2nd Semester\Database Systems\Activity\Database Final\static\SignupStockPhoto3.jpg" alt="Blog Thumbnail">
+                <img src="{{ url_for('static', filename='/images/sign-up-img.jpg') }}" alt="Blog Thumbnail">
             </div>
             <div class="blog-content">
                 <h2>NEW BLOG</h2>
