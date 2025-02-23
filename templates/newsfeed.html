@@ -18,6 +18,25 @@
         </div>
     </div>
 
+    <div class="create-post-container">
+        <form class="post-form">
+            <h2>Create New Post</h2>
+            <div class="input-group">
+                <input type="text" name="title" placeholder="Enter your title..." required>
+            </div>
+            <div class="input-group">
+                <textarea name="content" placeholder="Write your post..." required></textarea>
+            </div>
+            <div class="action-buttons">
+                <label for="image" class="upload-button">
+                    Upload Image
+                </label>
+                <input type="file" id="image" name="image" accept="image/*" style="display: none;">
+                <button type="submit" class="post-button">Post</button>
+            </div>
+        </form>
+    </div>
+    
     <div class="container">
         <div class="blog-card"><a href="{{ url_for('post') }}" class = "no-underline">
             <div class="blog-image">

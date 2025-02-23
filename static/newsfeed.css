@@ -25,10 +25,75 @@ h1 {
     margin: 0px;
 }
 
-.profile-icon img{
-    width: 2rem;
-    cursor: pointer;
+.create-post-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.post-form h2 {
+    color: #4CAF50;
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 16px;
+}
+
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 16px;
+    min-height: 100px;
+    resize: vertical;
+    margin-bottom: 10px;
+}
+
+
+.action-buttons {
+    display: flex;
+    justify-content: right;  
+    gap: 10px;  
+    margin-top: 10px;
+}
+
+.upload-button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.post-button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
 
 .container {
     display: flex;
