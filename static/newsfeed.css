@@ -36,8 +36,7 @@ h1 {
 
 .post-form h2 {
     color: #4CAF50;
-    margin: 0;
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
     text-align: left;
 }
 
@@ -47,51 +46,47 @@ h1 {
 
 .input-group input[type="text"] {
     width: 100%;
-    padding: 10px;
+    padding: 12px 15px;
     border: none;
     border-radius: 5px;
     background-color: white;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 .input-group textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px 15px;
     border: none;
     border-radius: 5px;
     background-color: white;
     font-size: 16px;
-    min-height: 100px;
-    resize: vertical;
+    min-height: 180px;
+    resize: none;
     margin-bottom: 10px;
+    box-sizing: border-box;
 }
-
 
 .action-buttons {
     display: flex;
-    justify-content: right;  
-    gap: 10px;  
-    margin-top: 10px;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 15px;
 }
 
-.upload-button {
-    padding: 8px 16px;
+.upload-button, .post-button {
+    padding: 10px 18px;
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
+    transition: background-color 0.2s;
 }
 
-.post-button {
-    padding: 8px 16px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
+.upload-button:hover, .post-button:hover {
+    background-color: #3e8e41;
 }
 
 
